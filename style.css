@@ -1,11 +1,12 @@
-h2 {
+/*h2 {
     font-size: 24px;
     font-weight: 300;
     color: white;
     text-align: center;
-    padding-top: 10px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     margin-bottom: 10px;
-    font-family: system-ui;;
+
 }
 
 .textbox {
@@ -21,17 +22,14 @@ h2 {
     box-shadow: 1px 2px 5px rgba(0,0,0,.31);
     border: solid 1px #cbc9c9;
 }
-
 .tab-group {
+    position: relative;
+    width : 380px;
     list-style: none;
-    padding-top: 20px;
-    margin: 0 0 40px 0;
+    padding: 30px;
+    margin: 0 0 30px 0;
 }
-.tab-group:after {
-    content: "";
-    display: table;
-    clear: both;
-}
+
 .tab-group li a {
     display: block;
     text-decoration: none;
@@ -40,7 +38,7 @@ h2 {
     color: #a0b3b0;
     font-size: 20px;
     float: left;
-    width: 25%;
+    width: 160px;
     text-align: center;
     cursor: pointer;
     -webkit-transition: .5s ease;
@@ -55,6 +53,80 @@ h2 {
     color: #ffffff;
 }
 
-.tab-content > div:last-child {
-    display: none;
+label {
+    position: absolute;
+    left: 13px;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 22px;
 }
+
+input, textarea {
+    font-size: 22px;
+    display: block;
+    margin-left: 26px;
+    margin-right: 30px;
+    width: 367px;
+    height: 20px;
+    padding: 5px 10px;
+    background: none;
+    border: 1px solid #a0b3b0;
+    color: #ffffff;
+    overflow-x: hidden;
+
+}
+
+input:focus {
+    border-color: #1ab188;
+}
+textarea {
+    border: 2px solid #a0b3b0;
+
+}
+
+.field-wrap {
+    position: relative;
+    margin-bottom: 20px;
+
+}
+
+.top {
+    display: inline-block;
+    width: 40%;
+    z-index: 1;
+    position: relative;
+}
+.right {
+    float: right;
+    margin-top: -25px;
+}
+.left {
+   float: left;
+}
+
+.button {
+    padding: 15px 0;
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    background: #1ab188;
+    color: #ffffff;
+    -webkit-appearance: none;
+    width: 390px;
+    position: relative;
+    margin-left: 27px;
+    margin-right: 27px;
+}
+.button:hover, .button:focus {
+    background: #179b77;
+}
+
+.button-block {
+    display: block;
+    width: 388px;
+}
+
+.button#p1next {
+    width: 388px;
+}
+*/
