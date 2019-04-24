@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration</title>
+
+</head>
+<body>
+<div class = "textbox" id = "textbox">
+
+    <div class = "register-switch">
+        <ul class = "tab-group" id = "tabGroup">
+            <li class = "active"><a href="#step1">Sign Up</a>
+            </li>
+            <li  class = "tab"><a href="log_in">Log in</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="tab-content" >
+        <h2 id ="h2">Sign Up for Free</h2>
+
+        <div id = "step1">
+            <form onsubmit="return validateForm()" name= "myForm" action="saver" enctype="multipart/form-data" method="post">
+
+            <div>
+
+                <div class="field-wrap left">
+                    <input name = "name" id = "name" class = "top left" placeholder="First Name*" type="text"/>
+                </div>
+
+                <div class="field-wrap right ">
+                    <input name = "surname" id = "surname" class = "top right" placeholder="Last Name*" type="text" />
+                </div>
+            </div>
+            <div class="field-wrap">
+                <input name="email" placeholder="Email Address*" type="email" />
+            </div>
+
+            <div class="field-wrap">
+                <input name = "password" type="password" placeholder="Set A Password*"/>
+            </div>
+
+            <button type="submit" name="submit" class="button" id="p1next" />Get started</button>
+           </form>
+        </div>
+
+
+    </div>
+</div>
+
+
+<script src="../js/jquery-3.4.0.min.js"></script>
+<script src="../js/js.js"></script>
+<script src="../js/jQuery.js"></script>
+</body>
+</html>

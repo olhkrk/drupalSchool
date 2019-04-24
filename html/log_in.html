@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>login</title>
+</head>
+<body>
+<div class = "textbox" id = "textbox">
+
+    <div class = "register-switch">
+        <ul class = "tab-group" id = "tabGroup">
+            <li class = "active"><a href="index">Sign Up</a>
+            </li>
+            <li  class = "tab"><a href="">Log in</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="tab-content" >
+
+        <h2 id ="h2">LOG IN</h2>
+
+        <form name= "myForm" action="finder" enctype="multipart/form-data" method="post">
+            <?= $_SESSION['message'] ?>
+            <div class="field-wrap">
+                <input name="email" placeholder="Enter your email" type="email" />
+            </div>
+
+            <div class="field-wrap">
+                <input name = "password" type="password" placeholder="Enter your password"/>
+            </div>
+
+            <br><br>
+
+            <button type="submit" class="button" id="go" name ="login_btn"/>LOG IN</button>
+        </form>
+
+    </div>
+</div>
+
+<script src="../js/jquery-3.4.0.min.js"></script>
+<script src="../js/js.js"></script>
+<script src="../js/jQuery.js"></script>
+</body>
+</html>

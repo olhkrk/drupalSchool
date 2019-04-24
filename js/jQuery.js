@@ -9,6 +9,7 @@ $(document).ready(function () {
         'margin-bottom': '10px'
     });
 
+
     $('.textbox').css({
         'margin': '20px auto',
         'width': '443px',
@@ -120,11 +121,6 @@ $(document).ready(function () {
 
     $('.button#p1next').css({
         'width':'388px'
-    });
-
-    $('.tab-group li a').first().css({
-        'background': '#179b77',
-        'color': '#ffffff'
     });
 
 
