@@ -33,11 +33,11 @@ class User
         return password_verify($password, $arr['password']);
     }
 
-    public function rowCount(){
-        $this->pdo = $this->pdo->prepare($this->pdo);
-        $this->pdo->execute();
-        $this->pdo->rowCount();
-    }
+//    public function rowCount(){
+//        $this->pdo = $this->pdo->prepare($this->pdo);
+//        $this->pdo->execute();
+//        $this->pdo->rowCount();
+//    }
 
 }
 ?>

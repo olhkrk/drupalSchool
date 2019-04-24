@@ -12,7 +12,7 @@ class LoginController {
         else {
             $user->save($name, $surname, $email, $password);
             $_SESSION['name'] = $name;
-            logincontroller::welcome();
+            header('location: http://localhost/welcome');
         }
     }
 
@@ -25,9 +25,10 @@ class LoginController {
         } else {
             $logged = $user->checkCredentials($email, $password);
             if ($logged) {
-                session_start();
+                //session_start();
                 $_SESSION['name'] = $login['name'];
-                logincontroller::welcome();
+
+                header('location: http://localhost/welcome');
             } else {
                 die('Incorrect username / password combination!');
             }
@@ -35,18 +36,15 @@ class LoginController {
     }
 
     public static function logout() {
-        $_SESSION['login'] = FALSE;
+        setcookie("Hello", "", time() - 43200);
         session_destroy();
         header('location: log_in');
     }
 
     public static function welcome() {
-        $_SESSION['login'] = TRUE;
-        echo "<li class='active' style='position: center;'>";
+        //$_SESSION["name"];
         echo 'Hello: '.$_SESSION["name"].'<br>';
-        echo '<form action="logout" method="POST">';
-        echo '<button>Logout</button>';
-        echo '</form></li>';
+        include '/home/drupal/PhpstormProjects/untitled/drupalSchool/html/welcome.php';
     }
 }
 ?>
